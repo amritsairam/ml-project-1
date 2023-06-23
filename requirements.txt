@@ -1,5 +1,9 @@
 pandas
 numpy 
 seaborn
--e . #when we give this it will automatically triger setup.py file and as it is just for this , we dont want it in the setup.py file
+matplotlib
+scikit-learn
+catboost
+xgboost
+#-e . #when we give this it will automatically triger setup.py file and as it is just for this , we dont want it in the setup.py file
 #so we remove this in the get_requirements()
