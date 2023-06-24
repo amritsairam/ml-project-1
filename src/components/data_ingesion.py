@@ -3,10 +3,12 @@
 import os
 import sys
 from src.exception import CustomException
-from logger import logging
+from src.logger import logging
 from sklearn.preprocessing import train_test_split
 import pandas as pd
 from dataclasses import dataclass
+from src.components.data_transformation import DataTransformation
+from src.components.data_transformation import DataTransformationConfig
 
 @dataclass## if you only have variables inside the class the you can use dataclass as does not require you to create __init__
 class DataIngesionConfig:
@@ -46,5 +48,5 @@ class DataIngesion:  #in this we wont use dataclass as we would be having method
         
 if __name__=='__main__':
     obj=DataIngesion()
-    obj.initiate_data_ingesion()
+    train_data,test_data=obj.initiate_data_ingesion()
 
