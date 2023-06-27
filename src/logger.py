@@ -3,6 +3,7 @@ import os
 from datetime import datetime
 
 LOG_FILE=f"{datetime.now().strftime('%m_%d_%Y_%H_%M_%S')}.log" 
+#For example, if the current date and time are June 27, 2023, 15:30:45, then the value of LOG_FILE will be "06_27_2023_15_30_45.log".
 
 
 
