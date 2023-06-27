@@ -4,14 +4,15 @@ import os
 import sys
 from src.exception import CustomException
 from src.logger import logging
-from sklearn.preprocessing import train_test_split
+from sklearn.model_selection import train_test_split
+
 import pandas as pd
 
-from dataclasses import dataclass
-from src.components.data_transformation import DataTransformation
-from src.components.data_transformation import DataTransformationConfig
+# from dataclasses import dataclass
+# from src.components.data_transformation import DataTransformation
+# from src.components.data_transformation import DataTransformationConfig
 
-from src.components.model_trainer import ModelTrainerConfig,ModelTrainer
+# from src.components.model_trainer import ModelTrainerConfig,ModelTrainer
 
 @dataclass## if you only have variables inside the class the you can use dataclass as does not require you to create __init__
 class DataIngesionConfig:
@@ -53,7 +54,8 @@ if __name__=='__main__':
     obj=DataIngesion()
     train_data,test_data=obj.initiate_data_ingesion()
 
-    data_transformation=DataTransformation()
-    train_arr,test_arr,_=data_transformation.initiate_data_transformation(train_data,test_data)
+    # data_transformation=DataTransformation()
+    # train_arr,test_arr,_=data_transformation.initiate_data_transformation(train_data,test_data)
+
 #done
 
